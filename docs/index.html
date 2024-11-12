@@ -8,13 +8,62 @@
         <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png" />
         <meta name="apple-mobile-web-app-title" content="Axe Scoring" />
         <link rel="manifest" href="images/favicon/site.webmanifest" />
+
+        <script src="scripts/toggledivs.js"></script>
     </head>
     <body>
-        <div id="toc" style="display:none"></div>
-        <div id="twentyone" style="display:none"></div>
-        <div id="aroundtheworld" style="display:none"></div>
-        <div id="baseball" style="display:none"></div>
-        <div id="cricket" style="display:none"></div>
-        <div id="hvz" style="display:none"></div>
+        <!-- Default menu div visible -->
+        <div id="menu" class="game" style="display:block;">
+            <h1>Select your game</h1>
+            <table>
+                <tr>
+                    <td>
+                        <button onclick="toggleGameDiv('twentyone')">21</button>
+                    </td>
+                    <td>
+                        <button onclick="toggleGameDiv('aroundtheworld')">Around the World</button>
+                    </td>
+                    <td>
+                        <button onclick="toggleGameDiv('baseball')">Baseball</button>
+                    </td>
+                    <td>
+                        <button onclick="toggleGameDiv('cricket')">Cricket</button>
+                    </td>
+                    <td>
+                        <button onclick="toggleGameDiv('hvz')">HvZ</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <!-- Default div invisible -->
+        <div id="twentyone" class="game" style="display:none;">
+            <button onclick="toggleGameDiv('menu')">&#8592; Back to Games List</button>
+            <p />
+            21
+        </div>
+        <!-- Default div invisible -->
+        <div id="aroundtheworld" class="game" style="display:none;">
+            <button onclick="toggleGameDiv('menu')">&#8592; Back to Games List</button>
+            <p />
+            Around The World
+        </div>
+        <!-- Default div invisible -->
+        <div id="baseball" class="game" style="display:none;">
+            <button onclick="toggleGameDiv('menu')">&#8592; Back to Games List</button>
+            <p />
+            Baseball
+        </div>
+        <!-- Default div invisible -->
+        <div id="cricket" class="game" style="display:none;">
+            <button onclick="toggleGameDiv('menu')">&#8592; Back to Games List</button>
+            <p />
+            Cricket
+        </div>
+        <!-- Default div invisible -->
+        <div id="hvz" class="game" style="display:none;">
+            <button onclick="toggleGameDiv('menu')">&#8592; Back to Games List</button>
+            <p />
+            HvZ
+        </div>
     </body>
 </html>

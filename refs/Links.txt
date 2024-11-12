@@ -1,0 +1,13 @@
+Javascript State Machines
+=========================
+  No dependencies; all custom:
+https://dev.to/spukas/finite-state-machine-in-javascript-1ki1
+
+  Single file dependency:
+https://github.com/jakesgordon/javascript-state-machine
+https://www.npmjs.com/package/javascript-state-machine
+
+  Full library:
+https://xstate.js.org/
+https://github.com/statelyai/xstate
+https://stately.ai/docs/xstate
