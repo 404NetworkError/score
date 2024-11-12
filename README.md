@@ -10,3 +10,6 @@ TODO:
 - Baseball
 - Cricket
 - Humans vs. Zombies
+
+# License
+MIT
